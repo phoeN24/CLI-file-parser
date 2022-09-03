@@ -1,0 +1,11 @@
+ToDo:
+README includes:
+  How to build and run the application
+  How to run the tests
+  Relevant version requirements (e.g., Python 2 vs. Python 3)
+Write tests
+suggesstions on how code test could be improved
+include build file if aplicable
+
+use node
+testing framework: Jest
