@@ -3,7 +3,7 @@ let path = require('path');
 let folder = path.resolve('./input-files/');
 let fs = require('fs');
 
-const unsorted = [];
+const cache = [];
 
 //parse each input file, read data and pass data to be formated
 function fileParser (){
@@ -36,7 +36,10 @@ function formatData(data){
       if (arrOfStrings[str][i]  === ',' || arrOfStrings[str][i] === '|'){
         formatPipeComma(arrOfStrings[str])
         break;
-      } 
+      } else if(arrOfStrings[str][i] === ' '){
+        removeMI(arrOfStrings[str]);
+        break;
+      }
     }
   }
 //remove middle intials
@@ -54,8 +57,10 @@ function removeMI (str) {
   //replace commas and pipes with a space, split string by space
   let replacedAndSplitStr = str.replace(/[`~!@#$%^&*()_|,]/gi, '');
   let splitAndFiltered = replacedAndSplitStr.split(' ').filter(el => el.length > 0);
-  console.log('fuuuuuuuck', splitAndFiltered)
+  let lastEls = splitAndFiltered.splice(-2).reverse()
+  let correctOrder = splitAndFiltered.concat(lastEls)
+  console.log(correctOrder)
 }
+console.log(cache)
  
 console.log(fileParser())
-
