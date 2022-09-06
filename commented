@@ -1,0 +1,67 @@
+// class Data {
+//   constructor (lastName, firstName, middleIn, gender, DOB, favColor) {
+//     this.lastName = lastName,
+//     this.firstName = firstName,
+//     this.middleIn = middleIn,
+//     this.gender = gender,
+//     this.DOB = DOB,
+//     this.favColor = favColor
+//   }
+// };
+
+// getData(){
+//   return this.sortPipe
+// }
+  
+  
+// sortPipe(lastName, firstName, middleInitial, gender, favColor, DOB){
+//   fs.readFile('/input-files/pipe.txt', (err, data)){
+//     console.log(data)
+//   }
+// };
+
+// sortComma(lastName, firstName, gender, favColor, DOB){
+
+// };
+
+// sortSpace(lastName, firstName, middleIn, gender, DOB, favColor){
+//   //sort data from files into 
+//     //last name, first name, gender, date of birth, favorite color
+// };
+
+//exports.fileParser = fileParser
+// reads file snd stores data to cache
+  // fs.readFile( '/Users/phoenix/Desktop/def-method-code-test-input-files/space.txt' , 'utf-8', function (err, data)  {
+  //   const content = data; 
+  //   console.log(content);
+  // });
+  
+
+//function sortData(cache, sortArg){
+  //sort data by sortArg return as an array
+//}
+
+// function parseArgs(inputArgs){
+//   const args = arg(
+//     {
+//       //takes argument from command line and processes into options
+//     '--gender' : String,
+//     '--birthdate' : String,
+//     '--lastName' : String,
+//     '--g' : '--gender',
+//     '--b' : '--birthdate',
+//     '--ln' : '--lastName'
+//   },
+//   {
+//     //arguments we want arg to use
+//     argv : inputArgs.slice(2),
+//   }
+//   );
+//   return {
+    
+//   }
+// }
+
+// export function cli (args){
+//   console.log(args)
+// }
