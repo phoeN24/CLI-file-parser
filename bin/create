@@ -1,4 +1,0 @@
-#!/usr/bin/env node
-
-require(fileParser)
-const { fileParser } = require("../src/cli");
